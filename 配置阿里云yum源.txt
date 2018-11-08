@@ -1,0 +1,11 @@
+3.配置yum源
+https://opsx.alibaba.com/mirror  找到这个网站，然后找到centos7
+执行下载阿里云yum源
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum clean all 清空yum软件源
+yum makecache 生成缓存
+
+4.查看yum源仓库
+
+5.安装epel源，用于下载第三方额外的软件（nginx，redis等等）
+yum install -y epel-release
